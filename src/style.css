@@ -1,6 +1,6 @@
 h1 {
     justify-content: space-between;
-    color: rgb(191, 225, 255);
+    color: rgb(30, 89, 178);
     font-family: 'Courier New', Courier, monospace;
     padding: 10px 10px 10px 0px;
     margin-bottom: 0px;
@@ -8,11 +8,15 @@ h1 {
 }
 
 .weather {
-    background-color: rgb(42, 68, 91);
-    color:azure;
+    background-image: url('../images/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:rgb(109, 167, 254);
     margin: 50px auto;
     padding: 50px;
-    max-width: 500px;
+    max-width: 700px;
+   
     border-radius: 15px;
     box-shadow: 0 20px 50px;
 
@@ -36,33 +40,26 @@ main{
 }
 .main-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 .temperature{
     display: flex;
-    font-family:'Times New Roman', Times, serif;
-    
-   
+   flex-direction: row;
+    align-items: center;
+    justify-content: center;  
 }
-.temperature-value{
-    font-size: 100px;
-   margin-top: 22px;
 
-   
-   
+.temperature-value, .weather-icon, .weather-temperature-unit{
+    display: flex;
+    color: rgb(13, 47, 77);
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 80px;
+   margin: 0;
+   padding: 0; 
 }
-.weather-icon{
-   font-size: 50px;
-   margin-top: 22px;
-   padding: 20px 0px 0px 0px;
-    
-   
-}
-.weather-temperature-unit{
-    font-size: 50px;
-    margin-top: 20px;
-   
-}
+
+
 .wind-speed {
     padding: 10px 10px 10px 105px;
 }
@@ -76,10 +73,10 @@ color: rgb(247, 152, 203);
     margin-top: 0%;
 }
 a {
-    color:rgb(191, 225, 255);
+    color:rgb(13, 47, 77);
 }
 footer{
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(142, 187, 229, 0.397);
     padding: 30px 0 0 0 0;
     text-align: center;
     font-size: 15px;

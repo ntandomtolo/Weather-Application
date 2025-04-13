@@ -4,41 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>Weather</title>
 </head>
 
 <body>
     <div class="weather">
-    
-    <header>
-       <form class="weather-form"  id="weather-form">
-        <input type="Search" placeholder="Enter a city...." class="search-input" id="search-input" required>
-        <input type="submit" value="Search" class="search-button">
-       </form>
-    </header>
 
-    <main>
-        <div class="main-section">
-        <div>
-        <h1 id="city">Johannesburg</h1>
-        <p class="date">March 17 2025</p>
-        </div>
-        <div>
-        <p class="wind-speed">Humidity:<strong>60% </strong> Wind:<strong>2km/h</strong></p>
-        <div class="temperature"><div class="weather-icon">🌤️</div><div class="temperature-value" >12</div><div class="weather-temperature-unit">°C</div></div>
-        </div>
-       </div> 
-    </main>
-    
+        <header>
+            <form class="weather-form" id="weather-form">
+                <input type="search" placeholder="Enter a city...." class="search-input" id="search-input" required />
+                <input type="submit" value="Search" class="search-button" />
+            </form>
+        </header>
 
-    <footer>Coded by
-        <a href="https://github.com/ntandomtolo" target="blank" > Ntando Mtolo</a> and is on 
-        <a href="https://github.com/ntandomtolo/Weather-Application" target="blank" >Github</a> and hosted on
-        <a href="https://67cd84956b776b228f07f42a--weather-application-na.netlify.app/" target="blank" >Netlify</a>
-    </footer>
-</div>
+        <main>
+            <div class="main-section">
+                <div>
+                    <h1 id="city"></h1>
+                    <p class="date">March 17 2025</p>
+                </div>
+
+                 
+                <p class="wind-speed">Humidity:<strong>60% </strong> Wind:<strong>2km/h</strong></p>
+                
+                <div class="temperature">
+                    <div class="weather-icon">🌤️</div>
+                    <div class="temperature-value" id="temperature"></div>
+                    <div class="weather-temperature-unit">°C</div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>Coded by
+            <a href="https://github.com/ntandomtolo" target="blank"> Ntando Mtolo</a> and is on
+            <a href="https://github.com/ntandomtolo/Weather-Application" target="blank">Github</a> and hosted on
+            <a href="https://67cd84956b776b228f07f42a--weather-application-na.netlify.app/" target="blank">Netlify</a>
+        </footer>
+    </div>
+
+    <script src="src/app.js"></script>
 </body>
-<script src="src/app.js"></script>
 
 </html>
