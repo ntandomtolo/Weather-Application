@@ -1,6 +1,6 @@
 h1 {
     justify-content: space-between;
-    color: rgb(30, 89, 178);
+    color: rgba(144, 212, 238, 0.993);
     font-family: 'Courier New', Courier, monospace;
     padding: 10px 10px 10px 0px;
     margin-bottom: 0px;
@@ -8,15 +8,15 @@ h1 {
 }
 
 .weather {
-    background-image: url('../images/image.jpg');
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color:rgb(109, 167, 254);
+    color:rgba(202, 231, 242, 0.993);
     margin: 50px auto;
-    padding: 50px;
+    padding: 30px;
     max-width: 700px;
-   
+
     border-radius: 15px;
     box-shadow: 0 20px 50px;
 
@@ -51,7 +51,7 @@ main{
 
 .temperature-value, .weather-icon, .weather-temperature-unit{
     display: flex;
-    color: rgb(13, 47, 77);
+    color: rgba(144, 212, 238, 0.993);
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
         font-size: 80px;
@@ -60,11 +60,11 @@ main{
 }
 
 
-.wind-speed {
+.weather-app-details {
     padding: 10px 10px 10px 105px;
 }
 
-.wind-speed strong{
+.weather-app-details strong{
 color: rgb(247, 152, 203);
 
 }
@@ -73,11 +73,12 @@ color: rgb(247, 152, 203);
     margin-top: 0%;
 }
 a {
-    color:rgb(13, 47, 77);
+    color:rgb(247, 152, 203);
 }
 footer{
-    border-top: 1px solid rgba(142, 187, 229, 0.397);
+    border-top: 1px solid rgba(189, 236, 255, 0.993);
     padding: 30px 0 0 0 0;
+    color: rgba(181, 226, 244, 0.993);
     text-align: center;
     font-size: 15px;
 }
